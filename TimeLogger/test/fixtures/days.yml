@@ -1,14 +1,14 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: days
 #
-#  id              :integer          not null, primary key
-#  username        :string           not null
-#  email           :string           not null
-#  password_digest :string           not null
-#  session_token   :string           not null
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
+#  id         :integer          not null, primary key
+#  clock_in   :datetime
+#  clock_out  :datetime
+#  meal_time  :integer
+#  day_total  :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

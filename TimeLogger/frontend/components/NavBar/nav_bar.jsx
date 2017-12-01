@@ -23,11 +23,8 @@ const loggedInLinks = (currentUser, logout, guest) => (
     <button className="logout-button" onClick={logout}>
       LOG OUT
     </button>
-    <NavLink className="check-in" to="/checkin" activeClassName="is-active">
-      CHECK IN
-    </NavLink>
-    <NavLink className="global" to="/the-bar" activeClassName="is-active">
-      THE BAR
+    <NavLink className="check-in" to="/timesheet" activeClassName="is-active">
+      My Timesheet
     </NavLink>
     <NavLink
       className="header-name"

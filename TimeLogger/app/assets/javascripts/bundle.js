@@ -29055,13 +29055,8 @@ var loggedInLinks = function loggedInLinks(currentUser, logout, guest) {
     ),
     _react2.default.createElement(
       _reactRouterDom.NavLink,
-      { className: "check-in", to: "/checkin", activeClassName: "is-active" },
-      "CHECK IN"
-    ),
-    _react2.default.createElement(
-      _reactRouterDom.NavLink,
-      { className: "global", to: "/the-bar", activeClassName: "is-active" },
-      "THE BAR"
+      { className: "check-in", to: "/timesheet", activeClassName: "is-active" },
+      "My Timesheet"
     ),
     _react2.default.createElement(
       _reactRouterDom.NavLink,

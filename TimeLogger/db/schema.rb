@@ -10,10 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171128022244) do
+ActiveRecord::Schema.define(version: 20171201235029) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "days", force: :cascade do |t|
+    t.datetime "clock_in"
+    t.datetime "clock_out"
+    t.integer "meal_time"
+    t.integer "day_total"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "pay_periods", force: :cascade do |t|
+    t.integer "total_hours"
+    t.integer "period_length"
+    t.datetime "period_start"
+    t.datetime "period_end"
+    t.integer "day_id"
+    t.integer "user_id"
+    t.index ["total_hours"], name: "index_pay_periods_on_total_hours"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username", null: false
